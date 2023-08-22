@@ -1,0 +1,14 @@
+/* configuración del formato JSON para un proyecto que utilizara TypeScript
+especifica como el compilador de TypeScript debe compilar el código fuente
+y cómo deben manejarse las dependencias y las características del lenguaje. */
+{
+    "compilerOptions": {
+        "target": "ES2017", // version de EcmaScript
+        "module": "CommonJS", // modulo comunmente usado por node
+        "outDir": "dist", // carpeta de salida de los archivos
+        "strict": true, // revisa errores de forma mas estricta 
+        "esModuleInterop": true // facilita la importacion y exportacion de modulos
+    },
+    "include": ["src"], // archivos que se tendran en cuenta en la compilación
+    "exclude": ["node_modules"] // archivos que no se tendran en cuenta en la compilación
+}
